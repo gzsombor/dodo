@@ -84,7 +84,7 @@
         <sonar.surefire.reportsPath>${project.testresult.directory}/surefire-reports</sonar.surefire.reportsPath>
         <sonar.tests>${project.basedir}/src/test/</sonar.tests>
 
-        <ff4j.version>1.7.3</ff4j.version>
+        <ff4j.version>1.8</ff4j.version>
         <evosuiteVersion>1.0.6</evosuiteVersion>
         <!-- jhipster-needle-maven-property -->
     </properties>
