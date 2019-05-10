@@ -5,7 +5,7 @@
 
     <groupId>org.zsomb.dodomastore</groupId>
     <artifactId>dodoma</artifactId>
-    <version>1.10.2</version>
+    <version>1.10.3</version>
     <packaging>war</packaging>
     <name>Dodoma</name>
 
@@ -63,7 +63,7 @@
         <!-- The hibernate version to be used to override default version of liquibase maven plugin -->
         <hibernate-core.version>5.3.8.Final</hibernate-core.version>
         <h2.version>1.4.199</h2.version>
-        <spring.version>5.1.5.RELEASE</spring.version>
+        <spring.version>5.1.7.RELEASE</spring.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
         <mapstruct.version>1.3.0.Final</mapstruct.version>
@@ -337,7 +337,7 @@
          <dependency>
              <groupId>com.github.gzsombor</groupId>
              <artifactId>pdfserver</artifactId>
-             <version>v0.3</version>
+             <version>v0.3.1</version>
          </dependency>
          <dependency>
              <groupId>org.apache.odftoolkit</groupId>
@@ -1094,6 +1094,23 @@
                     <plugin>
                         <groupId>pl.project13.maven</groupId>
                         <artifactId>git-commit-id-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>${maven-war-plugin.version}</version>
+                        <configuration>
+                            <failOnMissingWebXml>false</failOnMissingWebXml>
+                            <warSourceDirectory>target/www/</warSourceDirectory>
+                            <webResources>
+                                <resource>
+                                    <directory>src/main/webapp</directory>
+                                    <includes>
+                                        <include>WEB-INF/**</include>
+                                    </includes>
+                                </resource>
+                            </webResources>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
