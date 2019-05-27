@@ -5,7 +5,7 @@
 
     <groupId>org.zsomb.dodomastore</groupId>
     <artifactId>dodoma</artifactId>
-    <version>1.10.3</version>
+    <version>1.10.5</version>
     <packaging>war</packaging>
     <name>Dodoma</name>
 
@@ -81,8 +81,8 @@
         <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
         <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
-        <git-commit-id-plugin.version>2.2.6</git-commit-id-plugin.version>
-        <jacoco-maven-plugin.version>0.8.3</jacoco-maven-plugin.version>
+        <git-commit-id-plugin.version>3.0.0</git-commit-id-plugin.version>
+        <jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
         <jib-maven-plugin.version>0.9.11</jib-maven-plugin.version>
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
         <openapi-generator-maven-plugin.version>3.3.4</openapi-generator-maven-plugin.version>
