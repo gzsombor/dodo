@@ -96,7 +96,7 @@
         <!-- jhipster-needle-maven-property -->
 
         <ff4j.version>1.8.1</ff4j.version>
-        <poi.version>4.1.0</poi.version>
+        <poi.version>4.1.1</poi.version>
     </properties>
 
     <dependencyManagement>
