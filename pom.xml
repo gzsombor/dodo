@@ -95,7 +95,7 @@
         <junit.itReportFolder>${project.testresult.directory}/integrationTest</junit.itReportFolder>
         <!-- jhipster-needle-maven-property -->
 
-        <ff4j.version>1.8.1</ff4j.version>
+        <ff4j.version>1.8.2</ff4j.version>
         <poi.version>4.1.0</poi.version>
     </properties>
 
