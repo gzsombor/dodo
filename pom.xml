@@ -5,7 +5,7 @@
 
     <groupId>org.zsomb.dodomastore</groupId>
     <artifactId>dodoma</artifactId>
-    <version>1.11.1</version>
+    <version>1.11.14</version>
     <packaging>war</packaging>
     <name>Dodoma</name>
 
@@ -58,12 +58,12 @@
         <javassist.version>3.26.0-GA</javassist.version>
         <!-- The liquibase version should match the one managed by
         https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies/${spring-boot.version} -->
-        <liquibase.version>3.8.6</liquibase.version>
+        <liquibase.version>3.8.7</liquibase.version>
         <liquibase-hibernate5.version>3.8</liquibase-hibernate5.version>
         <!-- The hibernate version to be used to override default version of liquibase maven plugin -->
-        <hibernate-core.version>5.4.10.Final</hibernate-core.version>
+        <hibernate-core.version>5.4.17.Final</hibernate-core.version>
         <h2.version>1.4.200</h2.version>
-        <spring.version>5.2.3.RELEASE</spring.version>
+        <spring.version>5.2.4.RELEASE</spring.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
         <archunit-junit5.version>0.13.1</archunit-junit5.version>
@@ -79,8 +79,8 @@
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.2.3</maven-war-plugin.version>
-        <maven-checkstyle.version>3.1.0</maven-checkstyle.version>
-        <checkstyle.version>8.29</checkstyle.version>
+        <maven-checkstyle.version>3.1.1</maven-checkstyle.version>
+        <checkstyle.version>8.33</checkstyle.version>
         <spring-nohttp-checkstyle.version>0.0.4.RELEASE</spring-nohttp-checkstyle.version>
         <frontend-maven-plugin.version>1.9.1</frontend-maven-plugin.version>
         <git-commit-id-plugin.version>4.0.0</git-commit-id-plugin.version>
@@ -98,7 +98,7 @@
         <!-- jhipster-needle-maven-property -->
 
         <ff4j.version>1.8.2</ff4j.version>
-        <poi.version>4.1.1</poi.version>
+        <poi.version>4.1.2</poi.version>
     </properties>
 
     <dependencyManagement>
