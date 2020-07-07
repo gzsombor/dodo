@@ -5,7 +5,7 @@
 
     <groupId>org.zsomb.dodomastore</groupId>
     <artifactId>dodoma</artifactId>
-    <version>1.11.14</version>
+    <version>1.11.15</version>
     <packaging>war</packaging>
     <name>Dodoma</name>
 
@@ -14,6 +14,10 @@
           <id>jitpack.io</id>
           <url>https://jitpack.io</url>
         </repository>
+        <!--<repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/gzsombor/pdfserver</url>
+        </repository>-->
         <!-- jhipster-needle-maven-repository -->
     </repositories>
 
@@ -59,7 +63,7 @@
         <!-- The liquibase version should match the one managed by
         https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies/${spring-boot.version} -->
         <liquibase.version>3.9.0</liquibase.version>
-        <liquibase-hibernate5.version>3.8</liquibase-hibernate5.version>
+        <liquibase-hibernate5.version>3.9.0</liquibase-hibernate5.version>
         <!-- The hibernate version to be used to override default version of liquibase maven plugin -->
         <hibernate-core.version>5.4.17.Final</hibernate-core.version>
         <h2.version>1.4.200</h2.version>
@@ -71,21 +75,21 @@
         <!-- Plugin versions -->
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
         <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
         <maven-failsafe-plugin.version>3.0.0-M4</maven-failsafe-plugin.version>
         <maven-idea-plugin.version>2.2.1</maven-idea-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
-        <maven-war-plugin.version>3.2.3</maven-war-plugin.version>
+        <maven-war-plugin.version>3.3.0</maven-war-plugin.version>
         <maven-checkstyle.version>3.1.1</maven-checkstyle.version>
         <checkstyle.version>8.33</checkstyle.version>
         <spring-nohttp-checkstyle.version>0.0.4.RELEASE</spring-nohttp-checkstyle.version>
-        <frontend-maven-plugin.version>1.9.1</frontend-maven-plugin.version>
+        <frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
         <git-commit-id-plugin.version>4.0.0</git-commit-id-plugin.version>
         <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
-        <jib-maven-plugin.version>2.3.0</jib-maven-plugin.version>
+        <jib-maven-plugin.version>2.4.0</jib-maven-plugin.version>
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
         <openapi-generator-maven-plugin.version>4.3.1</openapi-generator-maven-plugin.version>
         <properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
@@ -361,8 +365,13 @@
          <dependency>
              <groupId>com.github.gzsombor</groupId>
              <artifactId>pdfserver</artifactId>
-             <version>v0.3.1</version>
+             <version>0.5</version>
          </dependency>
+<!--         <dependency>
+             <groupId>io.github.gzsombor</groupId>
+             <artifactId>pdfserver</artifactId>
+             <version>0.5</version>
+         </dependency>-->
          <dependency>
              <groupId>org.apache.odftoolkit</groupId>
              <artifactId>simple-odf</artifactId>
