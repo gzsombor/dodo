@@ -408,6 +408,12 @@
              <groupId>org.ff4j</groupId>
              <artifactId>ff4j-web</artifactId>
              <version>${ff4j.version}</version>
+             <exclusions>
+                <exclusion>
+                  <groupId>javax.servlet</groupId>
+                  <artifactId>servlet-api</artifactId>
+                </exclusion>
+             </exclusions>
          </dependency>
          <dependency>
              <groupId>org.ff4j</groupId>
