@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: io.spring.nohttp:nohttp-checkstyle
+    versions:
+    - 0.0.5.RELEASE
+    - 0.0.6.RELEASE
+  - dependency-name: org.liquibase.ext:liquibase-hibernate5
+    versions:
+    - 4.2.2
+    - 4.3.0.1
+    - 4.3.1
+    - 4.3.2
+  - dependency-name: com.google.cloud.tools:jib-maven-plugin
+    versions:
+    - 2.7.1
+    - 2.8.0
+  - dependency-name: com.github.eirslett:frontend-maven-plugin
+    versions:
+    - 1.11.0
+    - 1.11.2
