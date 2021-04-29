@@ -5,7 +5,7 @@
 
     <groupId>org.zsomb.dodomastore</groupId>
     <artifactId>dodoma</artifactId>
-    <version>1.11.15</version>
+    <version>1.11.20</version>
     <packaging>war</packaging>
     <name>Dodoma</name>
 
@@ -30,7 +30,7 @@
     <properties>
         <!-- Build properties -->
         <maven.version>3.3.9</maven.version>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <node.version>v10.15.3</node.version>
         <npm.version>6.9.0</npm.version>
         <yarn.version>v1.13.0</yarn.version>
@@ -103,6 +103,7 @@
 
         <ff4j.version>1.8.6</ff4j.version>
         <poi.version>4.1.2</poi.version>
+        <immutables.version>2.8.2</immutables.version>
     </properties>
 
     <dependencyManagement>
@@ -365,8 +366,14 @@
          <dependency>
              <groupId>com.github.gzsombor</groupId>
              <artifactId>pdfserver</artifactId>
-             <version>0.5</version>
+             <version>0.6</version>
          </dependency>
+         <dependency>
+            <groupId>org.immutables</groupId>
+            <artifactId>value</artifactId>
+            <version>${immutables.version}</version>
+            <scope>provided</scope>
+          </dependency>
 <!--         <dependency>
              <groupId>io.github.gzsombor</groupId>
              <artifactId>pdfserver</artifactId>
@@ -445,6 +452,11 @@
                             <artifactId>mapstruct-processor</artifactId>
                             <version>${mapstruct.version}</version>
                         </path>
+                        <dependency>
+                            <groupId>org.immutables</groupId>
+                            <artifactId>value</artifactId>
+                            <version>${immutables.version}</version>
+                        </dependency>
                         <!-- For JPA static metamodel generation -->
                         <path>
                             <groupId>org.hibernate</groupId>
